@@ -1,6 +1,6 @@
 def remove_int(x, i):
     l = 0
-    while(l < len(s)):
+    while(l < len(x)):
         if (x[l] == i):
             x.pop(l)
         else:
