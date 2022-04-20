@@ -11,16 +11,16 @@ class Tree:
 
     def inorder(self, root):
         if root:
-            inorder(root.left)
+            self.inorder(root.left)
             print(root.data)
-            inorder(root.right)
+            self.inorder(root.right)
 
     def postorder(self, root):
         if root:
 
-            postorder(root.right)
+            self.postorder(root.right)
             print(root.data)
-            postorder(root.left)
+            self.postorder(root.left)
 
     def preorder(self, root):
         if root:
