@@ -1,11 +1,24 @@
-#binary search and linked list given a list of numbers find the shortest path to a certain number#
+from tabnanny import check
 
 
-def locate_card(cards, query):
-    pass
+def check_palindrome(S):
+    n = len(S)
+    count = 0
+    for i in range(n//2):
+
+        if(x[i] == x[n - i - 1]):
+            count = count + 1
+        else:
+            return False
+    if (count == n//2):
+        return True
+    else:
+        return False
 
 
-test = {'input':{
-    'cards':[13,11,10,7,4,3,1,0],'query': 3
-},
-'output':4}
+if __name__ == '__main__':
+    x = input('Enter a string')
+    if(check_palindrome(x)):
+        print('The string is a palindrome')
+    else:
+        print('The string is not a palindrome')
